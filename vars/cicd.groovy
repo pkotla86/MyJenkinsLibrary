@@ -16,7 +16,7 @@ def DeployArtifact(jobname,ipaddress,context)
 
 def RunSelenium(jobname)
 {
-	sh 'java -jar /home/ubuntu/.jenkins/workspace/${jobname}/testing.jar'
+	sh "java -jar /home/ubuntu/.jenkins/workspace/${jobname}/testing.jar"
 }
 
 def SendMail(body,subject,emailId)
